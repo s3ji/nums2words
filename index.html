@@ -22,15 +22,20 @@
     <div class="jumbotron text-center">
         <h1>Convert Numbers To Words using PHP</h1>
         <p>Supported Up to 99 Trillions</p>
+        <p>Note: Results have a 500-millisecond delay.</p>
     </div>
 
     <div class="container p-4 my-4">
         <div class="center" style="height: 50px;">
-            <p id="result">Please enter a number or click "Pick Random Number" button bellow.</p>
+            <p id="result"></p>
         </div>
 
         <div class="center">
             <input type="number" id="input" class="masked" placeholder="Enter a number" value="0.00" step="0.01">
+        </div>
+
+        <div class="center">
+            <p id="instructions">Please enter a number or click "Pick Random Number" button bellow.</p>
         </div>
 
         <div class="center">
