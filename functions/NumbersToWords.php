@@ -5,7 +5,7 @@ class NumbersToWords
     public function convert($number = null): ?string
     {
         //Up to 99 Trillions are supported
-        if ( is_null($number) || $number > 99999999999999 ){
+        if ( is_null($number) || $number < 0 || $number > 99999999999999 ){
             return null;
         }
 

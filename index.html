@@ -26,7 +26,7 @@
 
     <div class="container p-4 my-4">
         <div class="center" style="height: 50px;">
-            <p id="result">Please enter a number.</p>
+            <p id="result">Please enter a number or click "Pick Random Number" button bellow.</p>
         </div>
 
         <div class="center">
@@ -42,7 +42,7 @@
     $(document).ready(function (e) {
         var input, request, timeout;
 
-        $('#input').on('keyup', function() {
+        $('#input').on('keyup change', function() {
             clear();
 
             if( !$(this).val() ){
